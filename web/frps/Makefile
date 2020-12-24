@@ -1,9 +1,10 @@
 .PHONY: dist build
-install:
-	@npm install
+
+build: install
+	@npm run build
 
 dev: install
-	@npm run dev
+	@npm run serve
 
-build:
-	@npm run build
+install:
+	@npm install
